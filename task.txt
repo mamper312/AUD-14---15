@@ -1,4 +1,28 @@
 Vs 2019
+Реализовать на языке С++ в main.cpp структуру Matrix с функциями внутри:
+input() - random size
+input(int rows, int columns)
+generateRandom(int rows, int columns)
+output()
+output(string fileName)
+determinant()
+
+Вместо printf/scanf используем cout/cin.
+Вместо malloc/free используем new/delete.
+Вместо fprintf/fscanf используем ofstream и потоковый вывод.
+
+В main создаём динамический массив структур Matrix, генерируем, считаем определители, выводим в консоль 
+Написать перемножение матриц в стиле C++: new, delete, cout, cin.
+
+Написать класс Timer, замеряющий время выполнения участка кода.
+Использование в main:
+Timer timer;
+timer.start();
+...
+timer.stop(); // выводится в консоль в миллисекундах
+timer.stop("s"); // в секундах
+timer.stop("m"); // в минутах
+timer.stop("full"); // максимально подробно 
 #include <iostream>
 #include <time.h>
 #include <fstream>
